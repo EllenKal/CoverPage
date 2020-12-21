@@ -1,5 +1,308 @@
+body {
+    background: #F2F2F2;
+}
+
 .body {
     width: 1920px;
     height: 1080px;
 }
 
+.top {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.name {
+    float: right;
+    width: 500px;
+    height: 40px;
+    margin: 0 60px 8px 20px;
+    line-height: 8px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.name h1 {
+    font-size: 40px;
+    text-align: end;
+    font-family: Merriweather;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+}
+
+.name h2 {
+    font-size: 30px;
+    text-align: end;
+    font-family: Zilla Slab;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+}
+
+.picture {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    padding-right: 0px;
+}
+
+#profile {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    margin: 24px 0 24px 0;
+    border-radius: 4px;
+}
+
+.image-background {
+    position: relative;
+    top: 25px;
+    left: -40px;
+    background-color: #A9D3B7;
+    margin: 0 163px 114px 72px;
+    border-radius: 4px;
+}
+
+.underlines {
+    width: 400px;
+    height: 24px;
+    background-color: #ffc978;
+    border-radius: 4px;
+}
+
+#about {
+    position: absolute;
+    top: 165px;
+    right: 130px;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+#underA {
+    position: absolute;
+    top: 190px;
+    right: -10px;
+}
+
+#underA:hover {
+    animation: loadBar 1s;
+    animation-fill-mode: forwards;
+}
+
+#passions {
+    position: absolute;
+    top: 230px;
+    right: 64px;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+#underP {
+    position: absolute;
+    top: 255px;
+    right: -50px;
+}
+
+#underP:hover {
+    animation: loadBarp 1s;
+    animation-fill-mode: forwards;
+}
+
+#myPassions:hover {
+    animation: forward;
+    animation-fill-mode: none;
+}
+
+
+#contact {
+    position: absolute;
+    top: 295px;
+    right: 75px;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+#underC {
+    position: absolute;
+    top: 320px;
+    right: -90px;
+}
+
+/*#contact:hover {
+    content: Email Me, or checkout my LinkedIn!;
+    font-style: italic;
+}*/
+
+#underC:hover {
+    animation: loadBarc 1s;
+    animation-fill-mode: forwards;
+}
+
+.bottom {
+    width: 100%;
+}
+
+.breakpoint1 {
+    width: 900px;
+    height: 6px;
+    margin: -120px 100px 20px 180px;
+    background-color: #a9d3b7;
+    float: center;
+} 
+
+p {
+    width: 900px;
+    font-family: Zilla Slab;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    margin: -5px 120px 5px 180px;
+}
+
+.breakpoint2 {
+    width: 900px;
+    height: 6px;
+    margin: 10px 100px 20px 180px;
+    background-color: #a9d3b7;
+    float: center;
+}
+
+button {
+    width: 150px;
+    height: 60px;
+    background-color: #466664;
+    font-family: Merriweather;
+    font-size: 15px;
+    color: white;
+    border: none;
+    margin: 10px 365px 20px 565px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+}
+
+.icons {
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+    margin: -60px 60px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid #466664; 
+    color: #466664;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+
+@keyframes loadBar {
+    from {
+        transform: translate3d(0px, 0px, 0px);
+      }
+      100% {
+        transform: translate3d(198px, 0px, 0px);
+    }
+}
+
+@keyframes loadBarp {
+    from {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    100% {
+        transform: translate3d(158px, 0px, 0px);
+    }
+}
+
+@keyframes loadBarc {
+    from {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    100% {
+        transform: translate3d(118px, 0px, 0px);
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+        line-height: 10px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-background {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+}
+/*#underA:hover {
+    top: 190px;
+    right: -150px
+}
+
+#about span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #about span:after {
+    content: 'PNW Native, Tree Hugger, Vegetarian';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #about:hover span {
+    padding-right: 25px;
+  }
+  
+  #about:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  */
